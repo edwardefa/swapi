@@ -3,18 +3,16 @@
 
 ## Obtener un personaje de starwars
 
-URL
+#### URL
 
 </people/:id/> -- obten una persona almacenada en tu base de datos
 </swapi/people/:id/> -- obten una persona desde el api de SWAPI
 
-Method:
+#### Method: GET
 
-<GET>
-
-<Respuesta Exitosa>
+#### <Respuesta Exitosa>
 Code: 200
-Content: {
+Content: ```{
     "anoNacimiento": "19BBY",
     "colorOjo": "blue",
     "peliculas": [
@@ -45,7 +43,7 @@ Content: {
         "https: //swapi.py4e.com/api/vehicles/14/",
         "https: //swapi.py4e.com/api/vehicles/30/"
     ]
-}
+}```
 
 
 <Respuesta de error>
@@ -54,15 +52,14 @@ Persona no encontrada.
 
 
 ## Crear un personaje de starwars
-URL
 
+#### URL
 </people>
 
-Method:
+#### Method: POST
 
-<POST>
-Data Params -- todos los parametros son obligatorios
-Data: {
+#### Data Params -- todos los parametros son obligatorios
+```{
     "anoNacimiento": "19BBY",
     "colorOjo": "blue",
     "peliculas": [
@@ -95,11 +92,11 @@ Data: {
     ],
     "id": 2,
     "typeData": "people"
-}
+}```
 
 <Respuesta Exitosa>
 Code: 200
-Content: {
+Content: ```{
     "anoNacimiento": "19BBY",
     "colorOjo": "blue",
     "peliculas": [
@@ -132,7 +129,7 @@ Content: {
     ],
     "id": 2,
     "typeData": "people"
-}
+}```
 
 Code: 500
 Content: { status : "Descripcion del error }
