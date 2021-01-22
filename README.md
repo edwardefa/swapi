@@ -4,10 +4,10 @@
 ## Obtener un personaje de starwars
 
 #### URL
-
-</people/:id/> -- obten una persona almacenada en tu base de datos
-</swapi/people/:id/> -- obten una persona desde el api de SWAPI
-
+```
+    </people/:id/> -- obten una persona almacenada en tu base de datos
+    </swapi/people/:id/> -- obten una persona desde el api de SWAPI
+```
 #### Method: GET
 
 #### <Respuesta Exitosa>
@@ -57,7 +57,9 @@ Persona no encontrada.
 ## Crear un personaje de starwars
 
 #### URL
-</people>
+```
+    </people>
+```
 
 #### Method: POST
 
@@ -101,7 +103,8 @@ Persona no encontrada.
 
 <Respuesta Exitosa>
 Code: 200
-Content: 
+Content:
+
 ```
 {
     "anoNacimiento": "19BBY",
