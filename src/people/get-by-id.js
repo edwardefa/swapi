@@ -8,7 +8,6 @@ module.exports.main = async (event) => {
   if ( !event.pathParameters || !event.pathParameters.id ) {
     return defaultResponse.failure({ status: "Faltan algunos parametros" });
   }
-  // const data = JSON.parse(event.body);
   const id = event.pathParameters.id;
   const params = {
     TableName: tableName,
