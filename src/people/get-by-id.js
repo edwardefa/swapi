@@ -29,16 +29,3 @@ module.exports.main = async (event) => {
     return defaultResponse.failure({ status: e });
   }
 };
-
-
-// remember config your serverless, use AWS credentials account (key and secret key):
-
-// serverless config credentials --provider aws --key AKIA543KU66EGLMJWV4P --secret m9iGRLHyRn5eNHAHho1TG64XpbAapQdFqMJ5IZNH
-
-// test one lambda
-
-// serverless invoke local --function peopleGetByIdFuncion --path events/event-people-get-by-id.json
-
-// serverless invoke local --function swapiPeopleGetByIdFuncion --path events/event-swapi-people-get-by-id.json
-
-// serverless invoke local --function peoplePostFuncion --path events/event-people-post.json

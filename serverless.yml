@@ -65,3 +65,24 @@ functions:
 resources:
   # API Gateway Errors
   - ${file(resources/api-gateway-errors.yml)}
+
+  - Resources:
+      starWarsTable:
+        Type: AWS::DynamoDB::Table
+        Properties:
+          TableName: StarWars
+          AttributeDefinitions:
+            - AttributeName: typeData
+              AttributeType: S
+            - AttributeName: id
+              AttributeType: N
+          KeySchema:
+            - AttributeName: typeData
+              KeyType: HASH
+            - AttributeName: id
+              KeyType: "RANGE"
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
+
+  

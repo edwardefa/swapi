@@ -1,5 +1,5 @@
 # StarWars Edward Forero Api
-<Bienvenido, este el el código para crear un api en AWS usando el framework serverless, esta api esta basada en SWAPI. En ella podras crear nuevos personajes en tu DynamoDB y consultar los personajes creados. Tambien podrás consultar personajes del API de SWAPI con los identificadores de sus campos traducidos>
+##### Bienvenido, este el el código para crear un api en AWS usando el framework serverless, esta api esta basada en SWAPI. En ella podras crear nuevos personajes en tu DynamoDB y consultar los personajes creados. Tambien podrás consultar personajes del API de SWAPI con los identificadores de sus campos traducidos
 
 ## Obtener un personaje de starwars
 
@@ -143,4 +143,15 @@ Content:
 ```
 
 Code: 500
-Content: { status : "Descripcion del error }
+Content: 
+```
+{ 
+    status : "Descripcion del error"
+}
+```
+
+
+##### Si eres desarrollador y quieres probar localmente, no olvides:
+1. Instalar y configurar el aws-sdk
+2. Instalar serverless framework
+3. Clonar este repositorio
