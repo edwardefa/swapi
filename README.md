@@ -12,7 +12,9 @@
 
 #### <Respuesta Exitosa>
 Code: 200
-Content: ```{
+Content: 
+```
+{
     "anoNacimiento": "19BBY",
     "colorOjo": "blue",
     "peliculas": [
@@ -43,7 +45,8 @@ Content: ```{
         "https: //swapi.py4e.com/api/vehicles/14/",
         "https: //swapi.py4e.com/api/vehicles/30/"
     ]
-}```
+}
+```
 
 
 <Respuesta de error>
@@ -59,7 +62,8 @@ Persona no encontrada.
 #### Method: POST
 
 #### Data Params -- todos los parametros son obligatorios
-```{
+```
+{
     "anoNacimiento": "19BBY",
     "colorOjo": "blue",
     "peliculas": [
@@ -92,11 +96,14 @@ Persona no encontrada.
     ],
     "id": 2,
     "typeData": "people"
-}```
+}
+```
 
 <Respuesta Exitosa>
 Code: 200
-Content: ```{
+Content: 
+```
+{
     "anoNacimiento": "19BBY",
     "colorOjo": "blue",
     "peliculas": [
@@ -129,7 +136,8 @@ Content: ```{
     ],
     "id": 2,
     "typeData": "people"
-}```
+}
+```
 
 Code: 500
 Content: { status : "Descripcion del error }
