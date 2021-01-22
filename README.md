@@ -151,7 +151,15 @@ Content:
 ```
 
 
-##### Si eres desarrollador y quieres probar localmente, no olvides:
+##### Para desplegar este proyecto en tu cuenta AWS, no olvides:
 1. Instalar y configurar el aws-sdk
 2. Instalar serverless framework
 3. Clonar este repositorio
+4. Ingresar a la carpeta del repositorio creado e instalar los paquetes
+5. Desplegar con sls deploy
+
+#### En caso de que quieras hacer cambios y probarlos localmente
+Tienes a disposición algunos archivos con data de prueba, cada lambda posee su propio archivo el cual puedes probar con los siguientes comandos:
+* serverless invoke local --function peopleGetByIdFuncion --path events/event-people-get-by-id.json
+* serverless invoke local --function swapiPeopleGetByIdFuncion --path events/event-swapi-people-get-by-id.json
+* serverless invoke local --function peoplePostFuncion --path events/event-people-post.json
